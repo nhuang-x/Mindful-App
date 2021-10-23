@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import gif from './breatheinout.gif'
-import {Card, CardContent, CardHeader,Typography,Avatar } from '@material-ui/core'
+import {Card, CardContent, CardHeader,Grid} from '@material-ui/core'
+
 
  
 class Breathing extends React.Component {
