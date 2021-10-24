@@ -163,7 +163,7 @@ class Sleep extends React.Component {
             return <div>
                 <Card style={{background: "#FFA9A9"}}>
                 <CardHeader
-            title="You Did Not Get Enough Sleep. If you do not get more sleep, then you will face: "
+            title="You did not get enough sleep. If you do not get more sleep, then you will face: "
             />
             <CardContent>
                 <Typography> - Lack of alertness. Even missing as little as 1.5 hours can have an impact on how you feel. </Typography>

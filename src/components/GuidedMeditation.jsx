@@ -62,7 +62,7 @@ function Meditation(props) {
                 <CardHeader
                 style = {{backgroundColor: "#e4e9e2"}}
                     title="Guided Meditation Yoga"
-                    subheader="Take a Moment to Recenter Yourself"
+                    subheader="Take a moment to recenter yourself"
                 /> 
                 
                 <Grid container>
