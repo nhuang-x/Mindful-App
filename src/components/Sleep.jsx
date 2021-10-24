@@ -341,7 +341,7 @@ class Sleep extends React.Component {
 
                 <Grid container className={classes.spacer}>
                 </Grid>
-                <Grid container>
+                <Grid container xs >
                     <Grid direction="row" xs>
                       <h3 style={{paddingBottom:'5px'}}>
                         Did you get enough sleep?
