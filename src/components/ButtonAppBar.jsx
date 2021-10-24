@@ -38,6 +38,11 @@ const linkStyles = {
 function ButtonAppBar(props) {
   const { classes } = props;
   const [show, toggleShow] = React.useState(true);
+
+  useEffect(() => {
+    localStorage.setItem("show", show)
+  }, [show])
+
   return (
     <div className={classes.root}>
       <Router>
@@ -47,7 +52,7 @@ function ButtonAppBar(props) {
                 <MenuIcon />
               </IconButton> */}
               <Typography variant="h5" color="inherit">
-                Bruce Donald Is Evil
+                Bruce Donald Is ~Sometimes~ Evil
               </Typography>
               <ButtonGroup variant="text" aria-label="outlined button group">
               <Button color="inherit" onClick={() => toggleShow(false)}>
