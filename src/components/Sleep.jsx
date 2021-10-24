@@ -23,7 +23,7 @@ const styles = theme => ({
     height: 250,
   },
   spacer:{
-      height:20
+      height:10
   },
   header:{
       backgroundColor: "#e4e9e2"
@@ -109,15 +109,15 @@ class Sleep extends React.Component {
             return <div>
                 <Card style={{background: "#c9f1c9"}}>
                 <CardHeader
-            title="Nice! You got enough sleep! Here are some benefits to getting enough sleep: You..."
+            title="Nice! You got enough sleep! By getting enough sleep, you will probably:"
             />
             <CardContent>
             <Typography> - Get sick less often </Typography>
             <Typography> - Stay at a healthy weight</Typography>
             <Typography> - Lower your risk for serious health problems, like diabetes and heart disease  </Typography>
+            <Typography> - Experience more satisfaction in interpersonal relationships </Typography>
             <Typography> - Reduce stress and improve your mood </Typography>
             <Typography> - Think more clearly and do better in school and at work </Typography>
-            <Typography> - Get along better with people </Typography>
             <Typography> - Make good decisions and avoid injuries — for example, drowsy drivers cause thousands of car accidents every year </Typography> 
             </CardContent>
             </Card>             
@@ -128,14 +128,14 @@ class Sleep extends React.Component {
             return <div>
                 <Card style={{background: "#FFA9A9"}}>
                 <CardHeader
-            title="You did not get enough sleep. If you do not get more sleep, then you will face: "
+            title="You did not get enough sleep. By sleeping too little, you are more likely to experience: "
             />
             <CardContent>
-                <Typography> - Lack of alertness. Even missing as little as 1.5 hours can have an impact on how you feel. </Typography>
                 <Typography> - Excessive daytime sleepiness. It can make you very sleepy and tired during the day. </Typography>
+                <Typography> - Lack of alertness. Even missing as little as 1.5 hours can have an impact on how you feel. </Typography>
                 <Typography> - Impaired memory. Lack of sleep can affect your ability to think, remember and process information.</Typography>
                 <Typography> - Relationship stress. It can make you feel moody and you can become more likely to have conflicts with others. </Typography>
-                <Typography> - Poor Quality of life. You may become less likely to participate in normal daily activities or to exercise.</Typography>
+                <Typography> - Poor quality of life. You may become less likely to participate in normal daily activities or to exercise.</Typography>
                 <Typography> - Greater likelihood for car accidents. Drowsy driving accounts for thousands of crashes, injuries and fatalities each year</Typography>
             </CardContent>
             </Card>
@@ -343,8 +343,11 @@ class Sleep extends React.Component {
                 </Grid>
                 <Grid container>
                     <Grid direction="row" xs>
+                      <h3 style={{paddingBottom:'5px'}}>
+                        Did you get enough sleep?
+                      </h3>
                       <h3>
-                        Did you get enough sleep? {this.sleeparticle()}
+                        {this.sleeparticle()}
                       </h3>
                     </Grid>
                 </Grid>
