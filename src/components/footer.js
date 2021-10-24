@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => (
   <div className="footer">
-    <p>This is some content in sticky footer</p>
+    <p style = {{color:"white"}}>Developed by Duke University students for HackDuke 2021.</p>
   </div>
 );
 
