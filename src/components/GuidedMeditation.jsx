@@ -61,7 +61,7 @@ function Meditation(props) {
     <Card variant = "outlined">
                 <CardHeader
                 style = {{backgroundColor: "#e4e9e2"}}
-                    title="Guided Meditation"
+                    title="Guided Meditation Yoga"
                     subheader="Take a Moment to Recenter Yourself"
                 /> 
                 
@@ -70,8 +70,7 @@ function Meditation(props) {
                 <Grid direction='row' xs justify="center" alignItems="center">
                   
                     <h4>Guided Meditation Videos </h4>
-                    <p>Follow these videos</p>
-                    <p>Focus on your mind, body, and soul</p>
+                   
                     <Tabs TabIndicatorProps={{style:{background:'#7D9AAA'}}} value={value} onChange={handleChange} centered>
                         <Tab label="Meditation Video 1" />
                         <Tab label="Meditation Video 2" />
@@ -121,14 +120,10 @@ function Meditation(props) {
                     </TabPanel>
                     </Grid>
 
-
-
-                    
                     <Grid direction='row' xs justifyContent="center"alignItems="center">
                       
                     <h4>Guided Yoga Videos</h4>
-                    <p>Follow along to relieve stress</p>
-                    <p>Connecting the mind, body, and soul</p>
+                    
                     <Tabs TabIndicatorProps={{style:{background:'#7D9AAA'}}} value={value2} onChange={handleChange2} centered>
                         <Tab label="Yoga Video 1" />
                         <Tab label="Yoga Video 2" />
