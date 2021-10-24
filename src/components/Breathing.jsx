@@ -5,11 +5,14 @@ import {Card, CardContent, CardHeader,Grid} from '@material-ui/core'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BreathingInfo from './BreathingInfo';
+import BreathingInfo2 from './BreathingInfo2';
 
 const styles = {
   card: {
   },
+  
 };
+
 
 function Breathing(props) {
     const {classes} = props;
@@ -17,20 +20,22 @@ function Breathing(props) {
         <div>
             <Card className={classes.card}>
                 <CardHeader
-                    title="Breathing Exercises"
+                    title="Breathing Exercise"
                     subheader="Every system in the body relies on oxygen."
+                    
                 />
                 
                 <CardContent>
                     <Grid container >
                         <Grid direction="row" xs>
-                            <img src={gif} alt="Loading..." />
+                        <BreathingInfo2></BreathingInfo2>
                             </Grid>
                         <Grid direction="row" xs={2.5}>
                         <p>Follow the Blue Circle</p>
                            <p>Breath In While the Circle Expands</p>
                            <p>Breath Out While the Circle Shrinks</p>
                            <p>Repeat Until Calm</p>
+                           <img src={gif} alt="Loading..." />
 
                            
                             
