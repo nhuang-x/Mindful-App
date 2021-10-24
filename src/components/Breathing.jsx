@@ -20,26 +20,22 @@ function Breathing(props) {
         <div>
             <Card className={classes.card}>
                 <CardHeader
-                    style = {{backgroundColor: "#e4e9e2"}}
+                    style={{backgroundColor: "#e4e9e2"}}
                     title="Breathing Exercise"
                     subheader="Every system in the body relies on oxygen."
                     
                 />
                 
-                <CardContent>
+                <CardContent style={{paddingTop: "2%"}}>
                     <Grid container >
                         <Grid direction="row" xs>
                         <BreathingInfo2></BreathingInfo2>
                             </Grid>
                         <Grid direction="row" xs={2.5}>
-                        <p>Follow the Blue Circle</p>
-                           <p>Breath In While the Circle Expands</p>
-                           <p>Breath Out While the Circle Shrinks</p>
-                           <p>Repeat Until Calm</p>
+                        <p>Follow the Blue Circle.</p>
+                        <p>Breathe in while the circle expands.</p>
+                        <p>Breathe out while the circle shrinks.</p>
                            <img src={gif} alt="Loading..." />
-
-                           
-                            
                         </Grid>
                         <Grid direction="row" xs>
                             <BreathingInfo></BreathingInfo>

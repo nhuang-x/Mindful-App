@@ -69,7 +69,7 @@ class MoodJournal extends React.Component {
                     <Card>
                     <CardHeader
                     style={{backgroundColor:"#e4e9e2",
-                            marginBottom: '10px'}}
+                            marginBottom: '2%'}}
                     title="How are you feeling today?"
                     subheader="Make sure to fill out your mood journal everyday to keep in touch with your feelings and to keep your plant healthy and strong!"
                     />
