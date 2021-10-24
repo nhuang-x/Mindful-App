@@ -45,7 +45,7 @@ function ButtonAppBar(props) {
           <AppBar position="static" style={{ backgroundColor: "#5F7A6B" }}>
             <Toolbar>
               <Typography variant="h5" color="inherit">
-                <Link style = {linkStyles} to="/">Bruce Donald Is ~Sometimes~ Evil</Link>
+                <Link style = {linkStyles} to="/">Meditation Garden</Link>
               </Typography>
               <ButtonGroup variant="text" aria-label="outlined button group">
               <Button color="inherit">
@@ -55,7 +55,7 @@ function ButtonAppBar(props) {
               </Button>
               <Button color="inherit">
                 <Typography className={classes.link}>
-                  <Link style = {linkStyles} to="/mood-journal">Mood Journal</Link>
+                  <Link style = {linkStyles} to="/mood-journal">Journal</Link>
                 </Typography>
               </Button>
               <Button color="inherit">
@@ -66,7 +66,7 @@ function ButtonAppBar(props) {
              
               <Button color="inherit">
                 <Typography className={classes.link}>
-                  <Link style = {linkStyles} to="/sleeptracker">SleepCourt</Link>
+                  <Link style = {linkStyles} to="/sleeptracker">Sleep</Link>
                 </Typography>
               </Button>
 

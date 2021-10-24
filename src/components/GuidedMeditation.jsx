@@ -60,7 +60,7 @@ function Meditation(props) {
  <div className={classes.root}>
     <Card>
                 <CardHeader
-                    title="Guided Meditation"
+                    title="Guided Meditation & Yoga"
                     subheader="Take a Moment to Recenter Yourself"
                 /> 
                 
@@ -68,8 +68,8 @@ function Meditation(props) {
 
                 <Grid direction='row' xs justify="center" alignItems="center">
                     <p>Guided Meditation Videos </p>
-                    <p>Follow these videos</p>
-                    <p>Focus on your mind, body, and soul</p>
+                  
+
                     <Tabs value={value} onChange={handleChange} centered>
                         <Tab label="Meditation Video 1" />
                         <Tab label="Meditation Video 2" />
@@ -120,13 +120,9 @@ function Meditation(props) {
                     
                     </Grid>
 
-
-
-                    
                     <Grid direction='row' xs justifyContent="center"alignItems="center">
                     <p>Guided Yoga Videos</p>
-                    <p>Follow along to relieve stress</p>
-                    <p>Connecting the mind, body, and soul</p>
+                   
                     <Tabs value={value2} onChange={handleChange2} centered>
                         <Tab label="Yoga Video 1" />
                         <Tab label="Yoga Video 2" />
