@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Mindful-App/static/css/main.98216e4c.chunk.css",
+    "main.js": "/Mindful-App/static/js/main.b7cb9d90.chunk.js",
+    "main.js.map": "/Mindful-App/static/js/main.b7cb9d90.chunk.js.map",
+    "runtime-main.js": "/Mindful-App/static/js/runtime-main.35b8cbf2.js",
+    "runtime-main.js.map": "/Mindful-App/static/js/runtime-main.35b8cbf2.js.map",
+    "static/js/2.6b51a879.chunk.js": "/Mindful-App/static/js/2.6b51a879.chunk.js",
+    "static/js/2.6b51a879.chunk.js.map": "/Mindful-App/static/js/2.6b51a879.chunk.js.map",
+    "static/js/3.a6443331.chunk.js": "/Mindful-App/static/js/3.a6443331.chunk.js",
+    "static/js/3.a6443331.chunk.js.map": "/Mindful-App/static/js/3.a6443331.chunk.js.map",
+    "index.html": "/Mindful-App/index.html",
+    "precache-manifest.9487828d535cfc124aa37b3b5211b9c4.js": "/Mindful-App/precache-manifest.9487828d535cfc124aa37b3b5211b9c4.js",
+    "service-worker.js": "/Mindful-App/service-worker.js",
+    "static/css/main.98216e4c.chunk.css.map": "/Mindful-App/static/css/main.98216e4c.chunk.css.map",
+    "static/js/2.6b51a879.chunk.js.LICENSE.txt": "/Mindful-App/static/js/2.6b51a879.chunk.js.LICENSE.txt",
+    "static/media/The-science-of-healing-breath-infographic-683x1024.jpeg": "/Mindful-App/static/media/The-science-of-healing-breath-infographic-683x1024.2121bffe.jpeg",
+    "static/media/breatheinout.gif": "/Mindful-App/static/media/breatheinout.84e644e3.gif",
+    "static/media/square-breathing.png": "/Mindful-App/static/media/square-breathing.29724496.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35b8cbf2.js",
+    "static/js/2.6b51a879.chunk.js",
+    "static/css/main.98216e4c.chunk.css",
+    "static/js/main.b7cb9d90.chunk.js"
+  ]
+}
