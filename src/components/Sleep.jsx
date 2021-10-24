@@ -22,6 +22,9 @@ const styles = theme => ({
   grid:{
     height: 250,
   },
+  spacer:{
+      height:20
+  },
   header:{
       color: "white",
       backgroundColor: "#dbe4f1"
@@ -140,6 +143,16 @@ class Sleep extends React.Component {
             className={classes.header}
             />
             <CardContent className={classes.card}>
+                <Grid container>
+                    <Grid direction="row" xs>
+                        DayTime Sleep
+                    </Grid>
+                    <Grid direction="row" xs>
+                        NightTime Sleep
+                    </Grid>
+                </Grid>
+                <Grid container className={classes.spacer}>
+                    </Grid>
                 <Grid container className={classes.grid}>
                     <Grid direction="row" xs>
                         <IconButton className={classes.button1} size="large" aria-label="WbSunny" onClick={this.handleClickOpen1}>
@@ -257,9 +270,11 @@ class Sleep extends React.Component {
           </Dialog>
                     </Grid>
                 </Grid>
+                <Grid container className={classes.spacer}>
+                </Grid>
                 <Grid container>
                     <Grid direction="row" xs>
-                        Total: {this.calculateTimeDifference()}
+                        Total Hours: {this.calculateTimeDifference()}
                     </Grid>
                     <Grid direction="row" xs>
                         Did I get enough sleep? {this.sleepquestion()}
