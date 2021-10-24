@@ -79,10 +79,15 @@ class MoodJournal extends React.Component {
                         class = "happyMood" 
                         onClick={this.generatePromptHappy}
                         variant="contained"
-                        style = {{backgroundColor: "#FAEACB",
+                        style = {{backgroundColor: "#cccfbd",
                                 width: 200,
                                 height: 80,
-                                fontSize: 15}}>
+                                fontSize: 15,
+                                borderRadius:15,
+                                marginRight: '10px',
+                                marginBottom: '10px',
+                                outline: 'none',
+                                border:'none'}}>
                             HAPPY
                         </Button> 
 
@@ -92,10 +97,14 @@ class MoodJournal extends React.Component {
                         class = "sadMood" 
                         onClick={this.generatePromptSad}
                         variant="contained"
-                        style = {{backgroundColor: "#9CC0E7",
+                        style = {{backgroundColor: "#c1c5af",
                                 width: 200,
                                 height: 80,
-                                fontSize: 15}}>
+                                fontSize: 15,
+                                borderRadius:15,
+                                marginBottom: '10px',
+                                outline: 'none',
+                                border:'none'}}>
                             SAD
                         </Button> 
 
@@ -105,10 +114,15 @@ class MoodJournal extends React.Component {
                         class = "angryMood" 
                         onClick={this.generatePromptAngry}
                         variant="contained"
-                        style = {{backgroundColor:"#F0B0BC",
+                        style = {{backgroundColor:"#adb295",
                                     width: 200,
                                     height: 80,
-                                    fontSize: 15}}>
+                                    fontSize: 15,
+                                    borderRadius:15,
+                                    marginLeft: '10px',
+                                    marginBottom: '10px',
+                                    outline: 'none',
+                                    border:'none'}}>
                             ANGRY
                         </Button> 
                         </div>
@@ -120,10 +134,16 @@ class MoodJournal extends React.Component {
                         class = "anxiousMood" 
                         onClick={this.generatePromptAnxious}
                         variant="contained"
-                        style = {{backgroundColor:"#8686AF",
+                        style = {{backgroundColor:"#b7bca2",
                                     width: 200,
                                     height: 80,
-                                    fontSize: 15}}>
+                                    fontSize: 15,
+                                    borderRadius:15,
+                                    marginRight: '10px',
+                                    marginBottom: '10px',
+                                    outline: 'none',
+                                    border:'none'
+                                    }}>
                             ANXIOUS
                         </Button> 
 
@@ -133,10 +153,14 @@ class MoodJournal extends React.Component {
                         class = "stressedMood" 
                         onClick={this.generatePromptAnxious}
                         variant="contained"
-                        style = {{backgroundColor:"#8B5773",
+                        style = {{backgroundColor:"#a2a987",
                                     width: 200,
                                     height: 80,
-                                    fontSize:15}}>
+                                    fontSize:15,
+                                    borderRadius:15,
+                                    marginBottom: '10px',
+                                    outline: 'none',
+                                    border:'none'}}>
                             STRESSED
                         </Button> 
 
@@ -146,10 +170,15 @@ class MoodJournal extends React.Component {
                         class = "lostMood" 
                         onClick={this.generatePromptAnxious}
                         variant="contained"
-                        style = {{backgroundColor:"#B6A9B6",
+                        style = {{backgroundColor:"#989f7a",
                                     width: 200,
                                     height: 80,
-                                    fontSize: 15}}>
+                                    fontSize: 15,
+                                    borderRadius:15,
+                                    marginLeft: '10px',
+                                    marginBottom: '10px',
+                                    outline: 'none',
+                                    border:'none'}}>
                             LOST
                         </Button> 
                     </div>
