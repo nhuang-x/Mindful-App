@@ -6,7 +6,7 @@ import GuidedMeditation from './GuidedMeditation'
 import MoodJournal from './MoodJournal'
 import Breathing from './Breathing'
 import Home from './Home'
-import MenuIcon from '@material-ui/icons/Menu';
+import GrassIcon from '@mui/icons-material/Grass';
 import Sleep from './Sleep'
 
 import {
@@ -36,7 +36,6 @@ const linkStyles = {
   color: 'white'
 };
 
-
 function ButtonAppBar(props) {
   const { classes } = props;
   return (
@@ -44,8 +43,9 @@ function ButtonAppBar(props) {
       <Router>
           <AppBar position="static" style={{ backgroundColor: "#5F7A6B" }}>
             <Toolbar>
+              <GrassIcon fontSize="large" style={{padding:'-10%'}}/>
               <Typography variant="h5" color="inherit">
-                <Link style = {linkStyles} to="/">Meditation Garden</Link>
+                <Link style = {linkStyles} to="/">Mindful Garden</Link>
               </Typography>
               <ButtonGroup variant="text" aria-label="outlined button group">
               <Button color="inherit">
