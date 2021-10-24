@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography, Button, IconButton, ButtonGroup, Card, CardMedia } from '@material-ui/core';
-import MeditationPage from './MeditationPage'
+import GuidedMeditation from './GuidedMeditation'
 import MoodJournal from './MoodJournal'
 import Breathing from './Breathing'
 import MenuIcon from '@material-ui/icons/Menu';
@@ -80,7 +80,7 @@ function ButtonAppBar(props) {
               </Card>
             </div>}
           </div>
-          <Route path="/meditation" component={MeditationPage} />
+          <Route path="/meditation" component={GuidedMeditation} />
           <Route path="/breathe" component={Breathing} />
           <Route path="/mood-journal" component={MoodJournal} />
       </Router>
