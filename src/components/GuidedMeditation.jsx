@@ -20,6 +20,8 @@ const styles = {
  
  
 function Meditation(props) {
+
+        
     
     const [value, setValue] = React.useState(0);
 
@@ -62,7 +64,7 @@ function Meditation(props) {
                 <CardHeader
                 style = {{backgroundColor: "#e4e9e2"}}
                     title="Guided Meditation Yoga"
-                    subheader="Take a Moment to Recenter Yourself"
+                    subheader="Take a moment to recenter yourself"
                 /> 
                 
                 <Grid container>
@@ -135,7 +137,8 @@ function Meditation(props) {
                         <div>
                         <ReactPlayer
                         url=
-                        "https://www.youtube.com/watch?v=Nw2oBIrQGLo&ab_channel=SarahBethYoga"                        width="100%"
+                        "https://www.youtube.com/watch?v=Nw2oBIrQGLo&ab_channel=SarahBethYoga"                        
+                        width="100%"
                         textAlignVertical ="center"
                         
                         />
@@ -161,10 +164,12 @@ function Meditation(props) {
                         <h3>Bedtime Yoga Stretch to Release Tension and Stress - <a href="https://www.youtube.com/channel/UCxYVPua6HC46HzgT8IIn3vg">Yoga with Bird</a></h3>
                         <div>
                         <ReactPlayer
+                        className='react-player'
                         url=
                         "https://www.youtube.com/watch?v=4TQsfBYCyKQ&ab_channel=YogaWithBird"
                         width="100%"
                         textAlignVertical ="center"
+                      
                         
                         />
                         </div>
