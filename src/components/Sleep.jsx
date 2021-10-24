@@ -11,14 +11,10 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import Divider from '@material-ui/core/Divider'
+
 const styles = theme => ({
   root: {
     flexGrow: 1,
-  },
-  foreshadowing:{
-    backgroundColor: "black",
-    color: "red"
   },
   card:{
     height:"500%",
@@ -40,8 +36,7 @@ const styles = theme => ({
   },
   button1:{
     color: "FEFEBE",
-    backgroundColor: "#ffcc80",
-    //backgroundColor: "#FEFEBE",
+    backgroundColor: "#FEFEBE",
     borderRadius: 0,
     width: "100%",
     height:"100%",
@@ -96,36 +91,6 @@ class Sleep extends React.Component {
             plus1 = 1;
         }
         return (hourDiff1 + 5)% 24 + (hourDiff2 + 5)% 24 + plus1
-    };
-    calculateTimeDifference1(){
-        var plus1 = 0;
-        var valuestart1 = this.state.inputValue1;
-        var valueend1= this.state.inputValue2;
-
-        var timeStart1 = new Date("01/01/2021 " + valuestart1);
-        var timeEnd1 = new Date("01/01/2021 " + valueend1);
-
-        var difference1 = timeEnd1 - timeStart1;             
-        var diff_result1 = new Date(difference1);   
-
-        var hourDiff1 = diff_result1.getHours();
-        var minDiff1 = diff_result1.getMinutes();
-        return (hourDiff1 + 5)% 24
-    };
-    calculateTimeDifference2(){
-        var valuestart2 = this.state.inputValue3;
-        var valueend2= this.state.inputValue4;
-
-        var timeStart2 = new Date("01/01/2021 " + valuestart2);
-        var timeEnd2 = new Date("01/01/2021 " + valueend2);
-
-        var difference2 = timeEnd2 - timeStart2;             
-        var diff_result2 = new Date(difference2);   
-
-        var hourDiff2 = diff_result2.getHours();
-        var minDiff2 = diff_result2.getMinutes();
-
-        return (hourDiff2 + 5)% 24
     };
 
     sleepquestion(){
@@ -361,15 +326,11 @@ class Sleep extends React.Component {
                 </Grid>
                 <Grid container className={classes.spacer}>
                 </Grid>
-                {/*
                 <Grid container>
-                    <Grid direction="row" xs style={{background: "#d1dfff", height: 50, paddingTop: "1%"}}>
-                        You slept {this.calculateTimeDifference1()} hours during the Day
+                    <Grid direction="row" xs>
+                        Total Hours: {this.calculateTimeDifference()}
                     </Grid>
-                    <Grid direction="row" xs style={{background: "#abc5fe", height: 50, paddingTop: "1%"}}>
-                        You slept {this.calculateTimeDifference2()} hours during the Night
-                    </Grid>
-                </Grid>*/}
+                </Grid>
                 <Grid container style={{background: "#e4e9e2", height: 50, paddingTop: "1%"}}>
                     <Grid direction="row" xs >
                             You have slept a total of {this.calculateTimeDifference()} hours within the last 24 hours.
@@ -380,10 +341,9 @@ class Sleep extends React.Component {
                 </Grid>
                 <Grid container xs >
                     <Grid direction="row" xs>
-                        {this.sleeparticle()}
-                        </Grid>
+                        Did I get enough sleep? {this.sleepquestion()}
+                    </Grid>
                 </Grid>
-                
             </CardContent>
 
         </Card>
