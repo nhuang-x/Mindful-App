@@ -58,8 +58,9 @@ function Meditation(props) {
  const { classes } = props;
  return (
  <div className={classes.root}>
-    <Card>
+    <Card variant = "outlined">
                 <CardHeader
+                style = {{backgroundColor: "#e4e9e2"}}
                     title="Guided Meditation"
                     subheader="Take a Moment to Recenter Yourself"
                 /> 
@@ -67,10 +68,11 @@ function Meditation(props) {
                 <Grid container>
 
                 <Grid direction='row' xs justify="center" alignItems="center">
-                    <p>Guided Meditation Videos </p>
+                  
+                    <h4>Guided Meditation Videos </h4>
                     <p>Follow these videos</p>
                     <p>Focus on your mind, body, and soul</p>
-                    <Tabs value={value} onChange={handleChange} centered>
+                    <Tabs TabIndicatorProps={{style:{background:'#7D9AAA'}}} value={value} onChange={handleChange} centered>
                         <Tab label="Meditation Video 1" />
                         <Tab label="Meditation Video 2" />
                         <Tab label="Meditation Video 3"/>
@@ -117,17 +119,17 @@ function Meditation(props) {
                         </div>
                     </div>
                     </TabPanel>
-                    
                     </Grid>
 
 
 
                     
                     <Grid direction='row' xs justifyContent="center"alignItems="center">
-                    <p>Guided Yoga Videos</p>
+                      
+                    <h4>Guided Yoga Videos</h4>
                     <p>Follow along to relieve stress</p>
                     <p>Connecting the mind, body, and soul</p>
-                    <Tabs value={value2} onChange={handleChange2} centered>
+                    <Tabs TabIndicatorProps={{style:{background:'#7D9AAA'}}} value={value2} onChange={handleChange2} centered>
                         <Tab label="Yoga Video 1" />
                         <Tab label="Yoga Video 2" />
                         <Tab label="Yoga Video 3"/>
@@ -173,6 +175,7 @@ function Meditation(props) {
                         </div>
                     </div>
                     </TabPanel>
+                    
                     </Grid>
                     
 
