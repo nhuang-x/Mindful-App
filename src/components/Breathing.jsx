@@ -6,11 +6,16 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BreathingInfo from './BreathingInfo';
 
-class Breathing extends React.Component {
-   render() {
-    return<div>
+const styles = {
+  card: {
+  },
+};
+
+function Breathing(props) {
+    const {classes} = props;
+    return (
         <div>
-            <Card>
+            <Card className={classes.card}>
                 <CardHeader
                     title="Breathing Exercises"
                     subheader="It's Important!!!"
@@ -38,13 +43,12 @@ class Breathing extends React.Component {
 
                 
             </Card>
-
         </div>
-
-        
-    </div>  
-   }
+    )
 }
 
+Breathing.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
-export default Breathing;
+export default withStyles(styles)(Breathing);

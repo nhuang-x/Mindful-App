@@ -1,17 +1,15 @@
 import React, { Component } from 'react'
-import logo from './logo.svg';
 import './App.css';
 import MeditationPage from './components/MeditationPage'
+import MoodJournal from './components/MoodJournal'
+import ButtonAppBar from './components/ButtonAppBar'
 import Breathing from './components/Breathing'
-import Meditation from './components/GuidedMeditation'
- 
+
 function App() {
- return (
-   <div className="App">
-     <MeditationPage/>
-     <Breathing/>
-     <Meditation/>
-   </div>
+  return (
+    <div className="App">
+        <ButtonAppBar/>
+    </div>
  );
 }
  

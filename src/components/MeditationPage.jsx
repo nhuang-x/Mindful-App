@@ -1,15 +1,26 @@
 import React, { Component } from 'react'
-import {AppBar, TextField, Typography, Grid} from '@material-ui/core';
-import ButtonAppBar from './ButtonAppBar'
-
-class MeditationPage extends React.Component {
-    render() { 
-        return <Grid>
-            <ButtonAppBar>
-                AppBar
-            </ButtonAppBar>
-        </Grid>;
-    }
-}
+import {Paper, Grid} from '@material-ui/core';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
  
-export default MeditationPage;
+const styles = {
+  root: {
+    backgroundColor:"red !important",
+  },
+};
+
+function MeditationPage(props) {
+  const { classes } = props;
+  return (
+    <Paper className={classes.root}>
+        <Grid>
+        </Grid>
+    </Paper>
+  );
+}
+
+MeditationPage.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(MeditationPage);
