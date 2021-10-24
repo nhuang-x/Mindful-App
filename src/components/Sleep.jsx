@@ -30,8 +30,7 @@ const styles = theme => ({
       height:20
   },
   header:{
-      color: "white",
-      backgroundColor: "#dbe4f1"
+      backgroundColor: "#e4e9e2"
   },
   button: {
     color: "black",
@@ -145,16 +144,16 @@ class Sleep extends React.Component {
             return <div>
                 <Card style={{background: "#c9f1c9"}}>
                 <CardHeader
-            title="Nice! You got enough Sleep! Here are some benefits to getting enough sleep: You..."
+            title="Nice! You got enough sleep! Here are some benefits to getting enough sleep: You..."
             />
             <CardContent>
-            <Typography> -Get sick less often </Typography>
-            <Typography> -Stay at a healthy weight</Typography>
-            <Typography> -Lower your risk for serious health problems, like diabetes and heart disease  </Typography>
-            <Typography> -Reduce stress and improve your mood </Typography>
-            <Typography> -Think more clearly and do better in school and at work </Typography>
-            <Typography> -Get along better with people </Typography>
-            <Typography> -Make good decisions and avoid injuries — for example, drowsy drivers cause thousands of car accidents every year </Typography> 
+            <Typography> - Get sick less often </Typography>
+            <Typography> - Stay at a healthy weight</Typography>
+            <Typography> - Lower your risk for serious health problems, like diabetes and heart disease  </Typography>
+            <Typography> - Reduce stress and improve your mood </Typography>
+            <Typography> - Think more clearly and do better in school and at work </Typography>
+            <Typography> - Get along better with people </Typography>
+            <Typography> - Make good decisions and avoid injuries — for example, drowsy drivers cause thousands of car accidents every year </Typography> 
             </CardContent>
             </Card>             
                 </div>
@@ -167,12 +166,12 @@ class Sleep extends React.Component {
             title="You Did Not Get Enough Sleep. If you do not get more sleep, then you will face: "
             />
             <CardContent>
-                <Typography> -Lack of alertness. Even missing as little as 1.5 hours can have an impact on how you feel. </Typography>
-                <Typography> -Excessive daytime sleepiness. It can make you very sleepy and tired during the day. </Typography>
-                <Typography> -Impaired memory. Lack of sleep can affect your ability to think, remember and process information.</Typography>
-                <Typography> -Relationship stress. It can make you feel moody and you can become more likely to have conflicts with others. </Typography>
-                <Typography> -Poor Quality of life. You may become less likely to participate in normal daily activities or to exercise.</Typography>
-                <Typography> -Greater likelihood for car accidents. Drowsy driving accounts for thousands of crashes, injuries and fatalities each year</Typography>
+                <Typography> - Lack of alertness. Even missing as little as 1.5 hours can have an impact on how you feel. </Typography>
+                <Typography> - Excessive daytime sleepiness. It can make you very sleepy and tired during the day. </Typography>
+                <Typography> - Impaired memory. Lack of sleep can affect your ability to think, remember and process information.</Typography>
+                <Typography> - Relationship stress. It can make you feel moody and you can become more likely to have conflicts with others. </Typography>
+                <Typography> - Poor Quality of life. You may become less likely to participate in normal daily activities or to exercise.</Typography>
+                <Typography> - Greater likelihood for car accidents. Drowsy driving accounts for thousands of crashes, injuries and fatalities each year</Typography>
             </CardContent>
             </Card>
             </div>
@@ -224,16 +223,21 @@ class Sleep extends React.Component {
         <div className={classes.root}>
         <Card className={classes.card}>
             <CardHeader
-            title="Sleep"
+            title="Sleep Tracker"
+            subheader="Log your sleep to build healthy habits."
             className={classes.header}
             />
             <CardContent className={classes.card}>
                 <Grid container>
                     <Grid direction="row" xs>
-                        DayTime Sleep
+                      <h3>
+                        Daytime Sleep
+                        </h3>
                     </Grid>
                     <Grid direction="row" xs>
-                        NightTime Sleep
+                      <h3>
+                        Nighttime Sleep
+                        </h3>
                     </Grid>
                 </Grid>
                 <Grid container className={classes.spacer}>
@@ -366,7 +370,7 @@ class Sleep extends React.Component {
                         You slept {this.calculateTimeDifference2()} hours during the Night
                     </Grid>
                 </Grid>*/}
-                <Grid container style={{background: "#D4F0F0", height: 50, paddingTop: "1%"}}>
+                <Grid container style={{background: "#e4e9e2", height: 50, paddingTop: "1%"}}>
                     <Grid direction="row" xs >
                             You have slept a total of {this.calculateTimeDifference()} hours within the last 24 hours.
                         </Grid>
