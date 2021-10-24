@@ -6,6 +6,7 @@ import GuidedMeditation from './GuidedMeditation'
 import MoodJournal from './MoodJournal'
 import Breathing from './Breathing'
 import MenuIcon from '@material-ui/icons/Menu';
+
 import {
   BrowserRouter as Router,
   Route,

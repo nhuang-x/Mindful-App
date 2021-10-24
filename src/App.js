@@ -4,6 +4,7 @@ import MeditationPage from './components/MeditationPage'
 import MoodJournal from './components/MoodJournal'
 import ButtonAppBar from './components/ButtonAppBar'
 import Breathing from './components/Breathing'
+import Footer from './components/footer'
 import { Card, CardMedia } from '@material-ui/core'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -30,7 +31,9 @@ function App(props) {
   const { classes } = props;
   return (
     <div className="App">
-      <ButtonAppBar/>
+        <ButtonAppBar/>
+        <Footer/>
+
     </div>
  );
 }
