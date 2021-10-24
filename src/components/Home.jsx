@@ -17,7 +17,7 @@ function Home(props) {
                 className = {classes.image} 
                 component="img"
                 height="100%"
-                image = "https://media.istockphoto.com/photos/in-the-hands-of-trees-growing-seedlings-bokeh-green-background-female-picture-id1181366400?k=20&m=1181366400&s=612x612&w=0&h=p-iaAHKhxsF6Wqrs7QjbwjOYAFBrJYhxlLLXEX1wsGs="/>
+                image = "https://www.teachermagazine.com/assets/images/teacher/_1200x630_crop_center-center_82_none/The-basics-of-mindfulness_1398166040.jpg?mtime=1611095601"/>
         </Card>
     )
 }
