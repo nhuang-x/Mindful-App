@@ -18,18 +18,18 @@ function Breathing(props) {
             <Card className={classes.card}>
                 <CardHeader
                     title="Breathing Exercises"
-                    subheader="It's Important!!!"
+                    subheader="Every system in the body relies on oxygen."
                 />
                 
                 <CardContent>
                     <Grid container >
                         <Grid direction="row" xs>
-                            <img src={gif} alt="loading..." />
+                            <img src={gif} alt="Loading..." />
                             </Grid>
-                        <Grid direction="row" xs={4}>
+                        <Grid direction="row" xs={2.5}>
                         <p>Follow the Blue Circle</p>
-                           <p>Breath In When the Circle Expands</p>
-                           <p>Breath Out when the Circle Shrinks</p>
+                           <p>Breath In While the Circle Expands</p>
+                           <p>Breath Out While the Circle Shrinks</p>
                            <p>Repeat Until Calm</p>
 
                            
