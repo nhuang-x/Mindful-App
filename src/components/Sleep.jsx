@@ -41,7 +41,8 @@ const styles = theme => ({
   },
   button1:{
     color: "FEFEBE",
-    backgroundColor: "#FEFEBE",
+    backgroundColor: "#ffcc80",
+    //backgroundColor: "#FEFEBE",
     borderRadius: 0,
     width: "100%",
     height:"100%",
@@ -161,7 +162,7 @@ class Sleep extends React.Component {
         }
         else{
             return <div>
-                <Card style={{background: "#FF9997"}}>
+                <Card style={{background: "#FFA9A9"}}>
                 <CardHeader
             title="You Did Not Get Enough Sleep. If you do not get more sleep, then you will face: "
             />
@@ -356,24 +357,21 @@ class Sleep extends React.Component {
                 </Grid>
                 <Grid container className={classes.spacer}>
                 </Grid>
+                {/*
                 <Grid container>
                     <Grid direction="row" xs style={{background: "#d1dfff", height: 50, paddingTop: "1%"}}>
-                        Total Hours for the Day: {this.calculateTimeDifference1()}
+                        You slept {this.calculateTimeDifference1()} hours during the Day
                     </Grid>
                     <Grid direction="row" xs style={{background: "#abc5fe", height: 50, paddingTop: "1%"}}>
-                        Total Hours for the Night: {this.calculateTimeDifference2()}
+                        You slept {this.calculateTimeDifference2()} hours during the Night
                     </Grid>
-                </Grid>
+                </Grid>*/}
                 <Grid container style={{background: "#D4F0F0", height: 50, paddingTop: "1%"}}>
                     <Grid direction="row" xs >
-                            Total Hours? {this.calculateTimeDifference()}
+                            You have slept a total of {this.calculateTimeDifference()} hours within the last 24 hours.
                         </Grid>
                 </Grid>
-                <Grid container style={{background: "#ABDEE6", height: 50, paddingTop: "1%" }}>
-                    <Grid direction="row" xs>
-                            Did I get enough sleep? {this.sleepquestion()}
-                        </Grid>
-                </Grid>
+
                 <Grid container className={classes.spacer}>
                 </Grid>
                 <Grid container xs >
