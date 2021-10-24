@@ -172,7 +172,7 @@ class Sleep extends React.Component {
                 <Typography> -Impaired memory. Lack of sleep can affect your ability to think, remember and process information.</Typography>
                 <Typography> -Relationship stress. It can make you feel moody and you can become more likely to have conflicts with others. </Typography>
                 <Typography> -Poor Quality of life. You may become less likely to participate in normal daily activities or to exercise.</Typography>
-                <Typography> -Greater likelihood for car accidents. Drowsy driving accounts for thousands of crashes, injuries and fatalities each year, according to the National Highway Traffic Safety Administration.</Typography>
+                <Typography> -Greater likelihood for car accidents. Drowsy driving accounts for thousands of crashes, injuries and fatalities each year</Typography>
             </CardContent>
             </Card>
             </div>
