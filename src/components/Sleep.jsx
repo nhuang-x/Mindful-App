@@ -251,8 +251,10 @@ class Sleep extends React.Component {
                 }}
                 inputProps={{
                 step: 300, // 5 min
+                
                 }}
             />
+            
             </form>
             </DialogContent>
             <DialogActions>
@@ -319,7 +321,6 @@ class Sleep extends React.Component {
               <Button onClick={this.handleClose2} color="primary">
                 Cancel
               </Button>
-
             </DialogActions>
           </Dialog>
                     </Grid>
