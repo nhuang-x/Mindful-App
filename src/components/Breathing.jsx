@@ -19,10 +19,12 @@ class Breathing extends React.Component {
                         <Grid direction="row" xs>
                             <img src={gif} alt="loading..." />
                             </Grid>
-                        <Grid direction="row" xs={4}>
-                            <p>
-                            Follow the blue circle, breath in when the circle expands, hold, breath out when the circle shrinks, hold.
-                            </p>
+                        <Grid direction="row" xs={4} justify="center" alignItems="center" >
+                            <p>follow the blue circle</p>
+                            <p>breath in when the circle expands</p>
+                            <p>hold</p>
+                            <p>breath out when the circle shrinks</p>
+                            <p>hold</p>
                         </Grid>
                         <Grid direction="row" xs>
                             <BreathingInfo></BreathingInfo>

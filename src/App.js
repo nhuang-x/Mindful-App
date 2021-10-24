@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
-import MeditationPage from './components/MeditationPage'
+import Meditation from './components/Meditation'
 import Breathing from './components/Breathing'
+import Sleep from './components/Sleep'
  
 function App() {
  return (
    <div className="App">
-     <MeditationPage/>
+     <Meditation/>
      <Breathing/>
+     <Sleep/>
    </div>
  );
 }
