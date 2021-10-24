@@ -330,7 +330,7 @@ class Sleep extends React.Component {
                     <Grid direction="row" xs>
                         Total Hours: {this.calculateTimeDifference()}
                     </Grid>
-                </Grid>*/}
+                </Grid>
                 <Grid container style={{background: "#e4e9e2", height: 50, paddingTop: "1%"}}>
                     <Grid direction="row" xs >
                             You have slept a total of {this.calculateTimeDifference()} hours within the last 24 hours.
