@@ -73,7 +73,7 @@ function Meditation(props) {
                     <Tabs value={value} onChange={handleChange} centered>
                         <Tab label="Meditation Video 1" />
                         <Tab label="Meditation Video 2" />
-                        <Tab label="Meditiation Video 3"/>
+                        <Tab label="Meditation Video 3"/>
                     </Tabs>
                     <TabPanel value={value} index={0}>
                     <div>
