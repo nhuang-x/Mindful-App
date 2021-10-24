@@ -6,6 +6,7 @@ import MeditationPage from './MeditationPage'
 import MoodJournal from './MoodJournal'
 import Breathing from './Breathing'
 import MenuIcon from '@material-ui/icons/Menu';
+
 import {
   BrowserRouter as Router,
   Route,
