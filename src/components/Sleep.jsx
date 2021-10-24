@@ -328,7 +328,9 @@ class Sleep extends React.Component {
                 </Grid>
                 <Grid container>
                     <Grid direction="row" xs>
+                      <h3>
                         Total Hours: {this.calculateTimeDifference()}
+                        </h3>
                     </Grid>
                 </Grid>
                 <Grid container style={{background: "#e4e9e2", height: 50, paddingTop: "1%"}}>
@@ -339,9 +341,11 @@ class Sleep extends React.Component {
 
                 <Grid container className={classes.spacer}>
                 </Grid>
-                <Grid container xs >
+                <Grid container>
                     <Grid direction="row" xs>
-                        Did I get enough sleep? {this.sleeparticle()}
+                      <h3>
+                        Did you get enough sleep? {this.sleeparticle()}
+                      </h3>
                     </Grid>
                 </Grid>
             </CardContent>
