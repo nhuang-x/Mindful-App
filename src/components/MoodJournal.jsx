@@ -63,12 +63,15 @@ class MoodJournal extends React.Component {
 
     render() { 
         const mystyle = {
-            paddingLeft: "140px",
+            paddingLeft: "13%",
             textAlign: "left"        };
         return <div>
                     <h1>
                         How are you feeling today?
                     </h1>
+                    <h4>
+                        Make sure to fill out your mood journal everyday to keep in touch with your feelings and to keep your plant healthy and strong!
+                    </h4>
                     <div>
                         <Button 
                     type = "mood" 
@@ -155,19 +158,19 @@ class MoodJournal extends React.Component {
                     multiline
                     maxRows={10}
                     rows={10}
-                    style={{width: 1000}}>
+                    style={{width: '75%'}}>
                     </TextField>
 
-                    <div style = {{paddingTop:10}}>
+                    <div style = {{paddingTop:15, paddingBottom:20}}>
                     <Button  
                     onClick={this.submitJournal}
                     variant="contained"
                     style = {{backgroundColor:"#B6A9B6",
-                                width: 90,
+                                width: 175,
                                 height: 40,
                                 fontSize: 12,
-                                borderRadius:10}}>
-                        LET IT GO
+                                borderRadius:10,}}>
+                        WATER YOUR PLANT
                     </Button>
                     </div>
                 </div>;
