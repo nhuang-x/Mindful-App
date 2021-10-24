@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography, Button, IconButton } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button, IconButton, ButtonGroup } from '@material-ui/core';
 import MeditationPage from './MeditationPage'
 import MoodJournal from './MoodJournal'
 import Breathing from './Breathing'
@@ -23,10 +23,16 @@ const styles = {
     marginLeft: -12,
     marginRight: 20
   },
-  link: {
-
-  }
+  
 };
+
+const linkStyles = {
+  margin: "3rem",
+  textAlign: "center",
+  textDecoration: "none",
+  color: 'white'
+};
+
 
 function ButtonAppBar(props) {
   const { classes } = props;
@@ -38,25 +44,27 @@ function ButtonAppBar(props) {
               <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
                 <MenuIcon />
               </IconButton>
-              <Button color="inherit">
-                <Typography className={classes.link}>
-                  <Link to="/meditation">Meditate</Link>
-                </Typography>
-              </Button>
-              <Button color="inherit">
-                <Typography className={classes.link}>
-                  <Link to="/mood-journal">Mood Journal</Link>
-                </Typography>
-              </Button>
-              <Button color="inherit">
-                <Typography className={classes.link}>
-                  <Link to="/breathe">Breathe</Link>
-                </Typography>
-              </Button>
-              <Typography variant="h6" color="inherit" className={classes.grow}>
-                Prezent
+              <Typography variant="h5" color="inherit">
+                Bruce Donald Is Evil
               </Typography>
-              <Button color="inherit">Login</Button>
+              <ButtonGroup variant="text" aria-label="outlined button group">
+              <Button color="inherit">
+                <Typography className={classes.link}>
+                  <Link style = {linkStyles} to="/meditation">Meditate</Link>
+                </Typography>
+              </Button>
+              <Button color="inherit">
+                <Typography className={classes.link}>
+                  <Link style = {linkStyles} to="/mood-journal">Mood Journal</Link>
+                </Typography>
+              </Button>
+              <Button color="inherit">
+                <Typography className={classes.link}>
+                  <Link style = {linkStyles} to="/breathe">Breathe</Link>
+                </Typography>
+              </Button>
+             
+              </ButtonGroup>
             </Toolbar>
           </AppBar>
           <Route path="/meditation" component={MeditationPage} />
