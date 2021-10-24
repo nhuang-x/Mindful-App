@@ -64,18 +64,17 @@ class MoodJournal extends React.Component {
     render() { 
         const mystyle = {
             paddingLeft: "13%",
-            textAlign: "left"        };
+            textAlign: "left" };
         return <div>
                     <Card>
-                <CardHeader
+                    <CardHeader
+                    style={{backgroundColor:"#F3ECE7"}}
                     title="How are you feeling today?"
                     subheader="Make sure to fill out your mood journal everyday to keep in touch with your feelings and to keep your plant healthy and strong!"
                     />
-                
-                
-                
-                    <div>
-                        <Button 
+
+                    <div style={{paddingTop: '2%'}}>
+                    <Button 
                     type = "mood" 
                     class = "happyMood" 
                     onClick={this.generatePromptHappy}
@@ -112,7 +111,7 @@ class MoodJournal extends React.Component {
                     </Button> 
                     </div>
 
-                    <div>
+                    <div style={{paddingBottom:'1%'}}>
                     <Button 
                     type = "mood" 
                     class = "anxiousMood" 
@@ -163,7 +162,7 @@ class MoodJournal extends React.Component {
                     style={{width: '75%'}}>
                     </TextField>
 
-                    <div style = {{paddingTop:15, paddingBottom:20}}>
+                    <div style = {{paddingTop:20, paddingBottom:20}}>
                     <Button  
                     onClick={this.submitJournal}
                     variant="contained"
