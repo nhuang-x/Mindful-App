@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import gif from './breatheinout.gif'
-import {Card, CardContent, CardHeader,Grid } from '@material-ui/core'
+import {Card, CardContent, CardHeader,Grid} from '@material-ui/core'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BreathingInfo from './BreathingInfo';
