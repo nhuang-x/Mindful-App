@@ -8,7 +8,7 @@ class MoodJournal extends React.Component {
     }
 
     generatePromptHappy(){
-        const happyPrompts = ["What are 5 things you are grateful for?",
+        const happyPrompts = ["What are five things you are grateful for?",
                               "What is something you are looking forward to?",
                               "What is something you are proud of?",
                               "What is a way that you can bring your happiness to others?"];
@@ -27,7 +27,7 @@ class MoodJournal extends React.Component {
 
     generatePromptAngry(){
         const angryPrompts = ["Use this as a space to vent!",
-                              "What was I feeling or doing just before I felt anger?",
+                              "What were you feeling or doing just before you felt angry?",
                               "If I could have a do-over, I would...",
                               "What is your anger trying to tell you about yourself?"];
         var givenPrompt=angryPrompts[Math.floor(Math.random()*4)];
@@ -35,7 +35,7 @@ class MoodJournal extends React.Component {
     }
 
     generatePromptAnxious(){
-        const anxiousPrompts = ["What is something I need to let go of?",
+        const anxiousPrompts = ["What is something you need to let go of?",
                               "What are three things that scare you and why?",
                               "Write a list of the worries that you want to get rid of.",
                               "What are some self-care ideas for when you are feeling overwhelmed?"];
@@ -71,8 +71,6 @@ class MoodJournal extends React.Component {
                     title="How are you feeling today?"
                     subheader="Make sure to fill out your mood journal everyday to keep in touch with your feelings and to keep your plant healthy and strong!"
                     />
-                
-                
                 
                     <div>
                         <Button 
