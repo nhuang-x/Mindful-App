@@ -8,7 +8,7 @@ class MoodJournal extends React.Component {
     }
 
     generatePromptHappy(){
-        const happyPrompts = ["What are 5 things you are grateful for?",
+        const happyPrompts = ["What are five things you are grateful for?",
                               "What is something you are looking forward to?",
                               "What is something you are proud of?",
                               "What is a way that you can bring your happiness to others?"];
@@ -27,7 +27,7 @@ class MoodJournal extends React.Component {
 
     generatePromptAngry(){
         const angryPrompts = ["Use this as a space to vent!",
-                              "What was I feeling or doing just before I felt anger?",
+                              "What were you feeling or doing just before you felt angry?",
                               "If I could have a do-over, I would...",
                               "What is your anger trying to tell you about yourself?"];
         var givenPrompt=angryPrompts[Math.floor(Math.random()*4)];
@@ -35,7 +35,7 @@ class MoodJournal extends React.Component {
     }
 
     generatePromptAnxious(){
-        const anxiousPrompts = ["What is something I need to let go of?",
+        const anxiousPrompts = ["What is something you need to let go of?",
                               "What are three things that scare you and why?",
                               "Write a list of the worries that you want to get rid of.",
                               "What are some self-care ideas for when you are feeling overwhelmed?"];
@@ -72,6 +72,7 @@ class MoodJournal extends React.Component {
                     title="How are you feeling today?"
                     subheader="Make sure to fill out your mood journal everyday to keep in touch with your feelings and to keep your plant healthy and strong!"
                     />
+<<<<<<< HEAD
 
                     <div style={{paddingTop: '2%'}}>
                     <Button 
@@ -104,13 +105,29 @@ class MoodJournal extends React.Component {
                     onClick={this.generatePromptAngry}
                     variant="contained"
                     style = {{backgroundColor:"#F0B0BC",
+=======
+                
+                    <div>
+                        <Button 
+                        disableRipple = "true"
+                        type = "mood" 
+                        class = "happyMood" 
+                        onClick={this.generatePromptHappy}
+                        variant="contained"
+                        style = {{backgroundColor: "#cccfbd",
+>>>>>>> e3ada9c3ec25978b8cc9e0c8dc153266f01c4c8e
                                 width: 200,
                                 height: 80,
-                                fontSize: 15}}>
-                        ANGRY
-                    </Button> 
-                    </div>
+                                fontSize: 15,
+                                borderRadius:15,
+                                marginRight: '10px',
+                                marginBottom: '10px',
+                                outline: 'none',
+                                border:'none'}}>
+                            HAPPY
+                        </Button> 
 
+<<<<<<< HEAD
                     <div style={{paddingBottom:'1%'}}>
                     <Button 
                     type = "mood" 
@@ -118,35 +135,98 @@ class MoodJournal extends React.Component {
                     onClick={this.generatePromptAnxious}
                     variant="contained"
                     style = {{backgroundColor:"#8686AF",
+=======
+                        <Button 
+                        disableRipple = "true"
+                        type = "mood" 
+                        class = "sadMood" 
+                        onClick={this.generatePromptSad}
+                        variant="contained"
+                        style = {{backgroundColor: "#c1c5af",
+>>>>>>> e3ada9c3ec25978b8cc9e0c8dc153266f01c4c8e
                                 width: 200,
                                 height: 80,
-                                fontSize: 15}}>
-                        ANXIOUS
-                    </Button> 
+                                fontSize: 15,
+                                borderRadius:15,
+                                marginBottom: '10px',
+                                outline: 'none',
+                                border:'none'}}>
+                            SAD
+                        </Button> 
 
-                    <Button 
-                    type = "mood" 
-                    class = "stressedMood" 
-                    onClick={this.generatePromptAnxious}
-                    variant="contained"
-                    style = {{backgroundColor:"#8B5773",
-                                width: 200,
-                                height: 80,
-                                fontSize:15}}>
-                        STRESSED
-                    </Button> 
+                        <Button 
+                        disableRipple = "true"
+                        type = "mood" 
+                        class = "angryMood" 
+                        onClick={this.generatePromptAngry}
+                        variant="contained"
+                        style = {{backgroundColor:"#adb295",
+                                    width: 200,
+                                    height: 80,
+                                    fontSize: 15,
+                                    borderRadius:15,
+                                    marginLeft: '10px',
+                                    marginBottom: '10px',
+                                    outline: 'none',
+                                    border:'none'}}>
+                            ANGRY
+                        </Button> 
+                        </div>
 
-                    <Button 
-                    type = "mood" 
-                    class = "lostMood" 
-                    onClick={this.generatePromptAnxious}
-                    variant="contained"
-                    style = {{backgroundColor:"#B6A9B6",
-                                width: 200,
-                                height: 80,
-                                fontSize: 15}}>
-                        LOST
-                    </Button> 
+                        <div>
+                        <Button 
+                        disableRipple = "true"
+                        type = "mood" 
+                        class = "anxiousMood" 
+                        onClick={this.generatePromptAnxious}
+                        variant="contained"
+                        style = {{backgroundColor:"#b7bca2",
+                                    width: 200,
+                                    height: 80,
+                                    fontSize: 15,
+                                    borderRadius:15,
+                                    marginRight: '10px',
+                                    marginBottom: '10px',
+                                    outline: 'none',
+                                    border:'none'
+                                    }}>
+                            ANXIOUS
+                        </Button> 
+
+                        <Button 
+                        disableRipple = "true"
+                        type = "mood" 
+                        class = "stressedMood" 
+                        onClick={this.generatePromptAnxious}
+                        variant="contained"
+                        style = {{backgroundColor:"#a2a987",
+                                    width: 200,
+                                    height: 80,
+                                    fontSize:15,
+                                    borderRadius:15,
+                                    marginBottom: '10px',
+                                    outline: 'none',
+                                    border:'none'}}>
+                            STRESSED
+                        </Button> 
+
+                        <Button 
+                        disableRipple = "true"
+                        type = "mood" 
+                        class = "lostMood" 
+                        onClick={this.generatePromptAnxious}
+                        variant="contained"
+                        style = {{backgroundColor:"#989f7a",
+                                    width: 200,
+                                    height: 80,
+                                    fontSize: 15,
+                                    borderRadius:15,
+                                    marginLeft: '10px',
+                                    marginBottom: '10px',
+                                    outline: 'none',
+                                    border:'none'}}>
+                            LOST
+                        </Button> 
                     </div>
                     <h4 style={mystyle}>
                         <span id="givenPrompt"></span>
