@@ -1,18 +1,45 @@
 import React, { Component } from 'react'
-import logo from './logo.svg';
 import './App.css';
-import Meditation from './components/Meditation'
+import MeditationPage from './components/MeditationPage'
+import MoodJournal from './components/MoodJournal'
+import ButtonAppBar from './components/ButtonAppBar'
 import Breathing from './components/Breathing'
-import Sleep from './components/Sleep'
+import Footer from './components/footer'
+import { Card, CardMedia } from '@material-ui/core'
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
  
-function App() {
- return (
-   <div className="App">
-     <Meditation/>
-     <Breathing/>
-     <Sleep/>
-   </div>
+const styles = {
+  root: {
+    backgroundColor:"red !important",
+  },
+  grid: {
+    resizeMode:'contain',
+    height:'100%',
+    width:'100%',
+    overflow:'hidden'
+  },
+  image: {
+    flex: 1,
+    resizeMode: 'cover',
+    height: undefined,
+    width: undefined
+  }
+};
+
+function App(props) {
+  const { classes } = props;
+  return (
+    <div className="App">
+        <ButtonAppBar/>
+        <Footer/>
+
+    </div>
  );
 }
- 
-export default App;
+
+App.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(App);
