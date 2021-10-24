@@ -72,40 +72,6 @@ class MoodJournal extends React.Component {
                     title="How are you feeling today?"
                     subheader="Make sure to fill out your mood journal everyday to keep in touch with your feelings and to keep your plant healthy and strong!"
                     />
-<<<<<<< HEAD
-
-                    <div style={{paddingTop: '2%'}}>
-                    <Button 
-                    type = "mood" 
-                    class = "happyMood" 
-                    onClick={this.generatePromptHappy}
-                    variant="contained"
-                    style = {{backgroundColor: "#FAEACB",
-                            width: 200,
-                            height: 80,
-                            fontSize: 15}}>
-                        HAPPY
-                    </Button> 
-
-                    <Button 
-                    type = "mood" 
-                    class = "sadMood" 
-                    onClick={this.generatePromptSad}
-                    variant="contained"
-                    style = {{backgroundColor: "#9CC0E7",
-                            width: 200,
-                            height: 80,
-                            fontSize: 15}}>
-                        SAD
-                    </Button> 
-
-                    <Button 
-                    type = "mood" 
-                    class = "angryMood" 
-                    onClick={this.generatePromptAngry}
-                    variant="contained"
-                    style = {{backgroundColor:"#F0B0BC",
-=======
                 
                     <div>
                         <Button 
@@ -115,7 +81,6 @@ class MoodJournal extends React.Component {
                         onClick={this.generatePromptHappy}
                         variant="contained"
                         style = {{backgroundColor: "#cccfbd",
->>>>>>> e3ada9c3ec25978b8cc9e0c8dc153266f01c4c8e
                                 width: 200,
                                 height: 80,
                                 fontSize: 15,
@@ -127,15 +92,6 @@ class MoodJournal extends React.Component {
                             HAPPY
                         </Button> 
 
-<<<<<<< HEAD
-                    <div style={{paddingBottom:'1%'}}>
-                    <Button 
-                    type = "mood" 
-                    class = "anxiousMood" 
-                    onClick={this.generatePromptAnxious}
-                    variant="contained"
-                    style = {{backgroundColor:"#8686AF",
-=======
                         <Button 
                         disableRipple = "true"
                         type = "mood" 
@@ -143,7 +99,6 @@ class MoodJournal extends React.Component {
                         onClick={this.generatePromptSad}
                         variant="contained"
                         style = {{backgroundColor: "#c1c5af",
->>>>>>> e3ada9c3ec25978b8cc9e0c8dc153266f01c4c8e
                                 width: 200,
                                 height: 80,
                                 fontSize: 15,
