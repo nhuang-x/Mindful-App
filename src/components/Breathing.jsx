@@ -20,6 +20,7 @@ function Breathing(props) {
         <div>
             <Card className={classes.card}>
                 <CardHeader
+                    style = {{backgroundColor: "#e4e9e2"}}
                     title="Breathing Exercise"
                     subheader="Every system in the body relies on oxygen."
                     
