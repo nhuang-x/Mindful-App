@@ -69,6 +69,9 @@ class MoodJournal extends React.Component {
                     <h1>
                         How are you feeling today?
                     </h1>
+                    <h4>
+                        Make sure to fill out your mood journal everyday to keep in touch with your feelings and to keep your plant healthy and strong!
+                    </h4>
                     <div>
                         <Button 
                     type = "mood" 
