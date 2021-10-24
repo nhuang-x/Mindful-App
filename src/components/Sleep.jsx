@@ -341,7 +341,7 @@ class Sleep extends React.Component {
                 </Grid>
                 <Grid container xs >
                     <Grid direction="row" xs>
-                        Did I get enough sleep? {this.sleepquestion()}
+                        Did I get enough sleep? {this.sleeparticle()}
                     </Grid>
                 </Grid>
             </CardContent>
