@@ -41,9 +41,9 @@ function ButtonAppBar(props) {
       <Router>
           <AppBar position="static" style={{ backgroundColor: "#5F7A6B" }}>
             <Toolbar>
-              <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+              {/* <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
                 <MenuIcon />
-              </IconButton>
+              </IconButton> */}
               <Typography variant="h5" color="inherit">
                 Bruce Donald Is Evil
               </Typography>
@@ -72,7 +72,7 @@ function ButtonAppBar(props) {
           <Route path="/mood-journal" component={MoodJournal} />
       </Router>
     </div>
-  );
+  );  
 }
 
 ButtonAppBar.propTypes = {
