@@ -62,6 +62,7 @@ class Sleep extends React.Component {
       inputValue4: "00:00",
     };
     calculateTimeDifference(){
+        var plus1 = 0;
         var valuestart1 = this.state.inputValue1;
         var valueend1= this.state.inputValue2;
 
@@ -72,6 +73,7 @@ class Sleep extends React.Component {
         var diff_result1 = new Date(difference1);   
 
         var hourDiff1 = diff_result1.getHours();
+        var minDiff1 = diff_result1.getMinutes();
 
         var valuestart2 = this.state.inputValue3;
         var valueend2= this.state.inputValue4;
@@ -83,7 +85,13 @@ class Sleep extends React.Component {
         var diff_result2 = new Date(difference2);   
 
         var hourDiff2 = diff_result2.getHours();
-        return (hourDiff1 + 5)% 24 + (hourDiff2 + 5)% 24
+        var minDiff2 = diff_result2.getMinutes();
+
+        if(minDiff1 + minDiff2 >= 60)
+        {
+            plus1 = 1;
+        }
+        return (hourDiff1 + 5)% 24 + (hourDiff2 + 5)% 24 + plus1
     };
 
     sleepquestion(){
