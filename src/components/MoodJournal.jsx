@@ -63,7 +63,7 @@ class MoodJournal extends React.Component {
 
     render() { 
         const mystyle = {
-            paddingLeft: "140px",
+            paddingLeft: "13%",
             textAlign: "left"        };
         return <div>
                     <h1>
@@ -155,7 +155,7 @@ class MoodJournal extends React.Component {
                     multiline
                     maxRows={10}
                     rows={10}
-                    style={{width: 1000}}>
+                    style={{width: '75%'}}>
                     </TextField>
 
                     <div style = {{paddingTop:10}}>
