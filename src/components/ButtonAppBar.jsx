@@ -64,7 +64,7 @@ function ButtonAppBar(props) {
                 </Typography>
               </Button>
              
-              <Button color="inherit" onClick={() => toggleShow(false)}>
+              <Button color="inherit">
                 <Typography className={classes.link}>
                   <Link style = {linkStyles} to="/sleeptracker">SleepCourt</Link>
                 </Typography>
