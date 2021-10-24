@@ -6,6 +6,8 @@ import GuidedMeditation from './GuidedMeditation'
 import MoodJournal from './MoodJournal'
 import Breathing from './Breathing'
 import Home from './Home'
+import MenuIcon from '@material-ui/icons/Menu';
+import Sleep from './Sleep'
 
 import {
   BrowserRouter as Router,
@@ -62,6 +64,12 @@ function ButtonAppBar(props) {
                 </Typography>
               </Button>
              
+              <Button color="inherit" onClick={() => toggleShow(false)}>
+                <Typography className={classes.link}>
+                  <Link style = {linkStyles} to="/sleeptracker">SleepCourt</Link>
+                </Typography>
+              </Button>
+
               </ButtonGroup>
             </Toolbar>
           </AppBar>
@@ -70,6 +78,7 @@ function ButtonAppBar(props) {
           <Route path="/meditation" component={GuidedMeditation} />
           <Route path="/breathe" component={Breathing} />
           <Route path="/mood-journal" component={MoodJournal} />
+          <Route path="/sleeptracker" component={Sleep} />
       </Router>
     </div>
   );  

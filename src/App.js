@@ -31,7 +31,9 @@ function App(props) {
   const { classes } = props;
   return (
     <div className="App">
-      <ButtonAppBar/>
+        <ButtonAppBar/>
+        <Footer/>
+
     </div>
  );
 }

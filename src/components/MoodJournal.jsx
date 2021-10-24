@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Button, TextField} from '@material-ui/core'
-
+import {Card, CardContent, CardHeader,Grid} from '@material-ui/core'
 
 class MoodJournal extends React.Component {
     submitJournal(){
@@ -66,12 +66,14 @@ class MoodJournal extends React.Component {
             paddingLeft: "13%",
             textAlign: "left"        };
         return <div>
-                    <h1>
-                        How are you feeling today?
-                    </h1>
-                    <h4>
-                        Make sure to fill out your mood journal everyday to keep in touch with your feelings and to keep your plant healthy and strong!
-                    </h4>
+                    <Card>
+                <CardHeader
+                    title="How are you feeling today?"
+                    subheader="Make sure to fill out your mood journal everyday to keep in touch with your feelings and to keep your plant healthy and strong!"
+                    />
+                
+                
+                
                     <div>
                         <Button 
                     type = "mood" 
@@ -173,8 +175,9 @@ class MoodJournal extends React.Component {
                         WATER YOUR PLANT
                     </Button>
                     </div>
+                    </Card>
                 </div>;
-
+            
     }
 }
  
